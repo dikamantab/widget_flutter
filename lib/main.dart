@@ -25,19 +25,19 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.all(40.0),
+              margin: EdgeInsets.all(20.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   // Padding(padding: EdgeInsets.all(20.0)),
                   Container(
-                      padding: EdgeInsets.all(15.0),
+                      padding: EdgeInsets.only(left: 10),
                       child: Text(
                         'BERITA UTAMA',
                         style: TextStyle(fontSize: 14),
                       )),
                   Container(
-                      padding: EdgeInsets.all(15.0),
+                      padding: EdgeInsets.only(left: 10),
                       child: Text(
                         'PERTANDINGAN HARI INI',
                         style: TextStyle(fontSize: 14),
@@ -45,6 +45,7 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+
             Container(
               child: Column(children: [
                 Image(
@@ -58,6 +59,16 @@ class MyApp extends StatelessWidget {
                     style:
                         TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
               ]),
+            ),
+           Container(
+             color: Colors.deepPurple,
+              alignment: Alignment.centerLeft,
+             child: Text("Transfer", style: TextStyle(
+                fontSize: 14.0, color:
+               Colors.white)),
+             height: 50.0,
+             width: 100.0,
+             padding: EdgeInsets.only(left: 5.0),
             ),
             Container(
               margin: EdgeInsets.only(top: 15),
